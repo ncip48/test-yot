@@ -30,6 +30,6 @@ $ npm install
 
 * Start android with command:
 ```bash
-$ cd soal1
+$ cd soal2
 $ npm run android
 ```
