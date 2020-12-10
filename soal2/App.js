@@ -10,9 +10,7 @@ import ResponsiveScreen from 'react-native-auto-responsive-screen';
 import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Home} from './src/screens';
-import {connect} from 'react-redux';
-import {fetchTodos} from './src/actions';
+import Home from './src/screens/Home';
 
 ResponsiveScreen.init(414, 852);
 
@@ -21,15 +19,14 @@ const Stack = createStackNavigator();
 function App(props) {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}>
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const mapStateToProps = (state) => ({});
-
-const mapDispatchToProps = (dispatch) => ({});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

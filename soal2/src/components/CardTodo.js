@@ -21,6 +21,8 @@ export const CardTodos = (props) => {
   return (
     <View style={styles.list}>
       <FlatList
+        refreshing={props.isLoading}
+        onRefresh={props.refreshing}
         data={props.data}
         renderItem={renderItem}
         keyExtractor={(item, index) => index.toString()}
