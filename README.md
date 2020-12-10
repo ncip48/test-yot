@@ -23,6 +23,8 @@ $ npm start
 
 Then open [http://localhost:3000/](http://localhost:3000/)
 
+or open https://5fd1b4ef5d916368eb56ba10--elated-mccarthy-73eb23.netlify.app/
+
 ## Preview
 
 ![ss/ss2.png](ss/ss2.png)
